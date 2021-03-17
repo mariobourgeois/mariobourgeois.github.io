@@ -548,14 +548,6 @@ h3 {
   color: #474646;
 }
 
-
-a:-webkit-any-link:active {
-  color: black;
-}
-
-
-
-
 .externe-lien {
 border: 1px;
 border-radius: 0px;
