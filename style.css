@@ -1,0 +1,588 @@
+/* #region Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* #endregion Reset */
+
+/* #region Général */
+
+:root {
+  --text-color-primary: #000000;
+  --text-color-light: #ffffff;
+  --bg-color-primary: rgb(58, 110, 179);
+  --bg-color-light-overlay: rgba(255, 255, 255, 0.6);
+  --bg-color-dark-overlay: rgba(0, 0, 0, 0.6);
+  --border-color: rgb(168, 168, 168);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  /* Image d'arrière plan */
+  background-image: url(images/geometric-1732847_1280.jpg);
+}
+
+/* Overlay afin de séparer le texte de l'arrière plan */
+
+.bg-overlay {
+  background-color: var(--bg-color-light-overlay);
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* Paragraphes */
+
+.paragraph {
+  font-size: 25px;
+  padding: 10px;
+}
+
+/* Titres */
+
+h1 {
+  text-align: center;
+  color: var(--text-color-light);
+  background-color: var(--bg-color-dark-overlay);
+  font-family: Noto Sans, sans-serif;
+}
+
+h4 {
+  text-align: center;
+  margin: 1em 0em;
+}
+
+/* #endregion Général */
+
+/* #region Navbar */
+
+.navbar {
+  background-color: var(--bg-color-primary);
+}
+
+.nav-link {
+  border-radius: 10px;
+  border-style: outset;
+  border-color: var(--border-color);
+  background-color: var(--text-color-light);
+  font-family: system-ui;
+  margin: 2px 3px;
+}
+
+/* #endregion Navbar */
+
+/* #region Footer */
+
+footer {
+  background-color: var(--bg-color-light-overlay);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* #endregion Footer */
+
+/* #region  */
+
+#experience ul {
+  color: darkslategrey;
+}
+
+/* #endregion */
+
+/* #region Compétences */
+
+#SkillBox {
+  font-size: 25px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+.SkillBar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+}
+
+#Skill-ANGLAIS {
+  width: 10%;
+  animation: Animate-ANGLAIS 4s;
+  -webkit-animation: Animate-ANGLAIS 4s;
+  -moz-animation: Animate-ANGLAIS 4s;
+  -o-animation: Animate-ANGLAIS 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #0db130;
+}
+
+@keyframes Animate-ANGLAIS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-webkit-keyframes Animate-ANGLAIS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-moz-keyframes Animate-ANGLAIS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-o-keyframes Animate-ANGLAIS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+
+#Skill-HTML {
+  width: 60%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #041d61;
+}
+
+@keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+@-o-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+#Skill-CSS {
+  animation: Animate-CSS 5s;
+  -webkit-animation: Animate-CSS 5s;
+  -moz-animation: Animate-CSS 5s;
+  -o-animation: Animate-CSS 5s;
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  background-color: #920707;
+}
+
+@keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+@-moz-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+@-o-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+#Skill-JS {
+  animation: Animate-JS 4s;
+  -webkit-animation: Animate-JS 4s;
+  -moz-animation: Animate-JS 4s;
+  -o-animation: Animate-JS 4s;
+  width: 10%;
+  height: 50px;
+  position: absolute;
+  background-color: #5d09a1;
+}
+
+@keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-moz-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-o-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+#Skill-PHP {
+  animation: Animate-PHP 4s;
+  -webkit-animation: Animate-PHP 4s;
+  -moz-animation: Animate-PHP 4s;
+  -o-animation: Animate-PHP 4s;
+  width: 20%;
+  height: 50px;
+  position: absolute;
+  background-color: #049777;
+}
+
+@keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+@-webkit-keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+@-moz-keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+@-o-keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+#Skill-SQL {
+  animation: Animate-SQL 4s;
+  -webkit-animation: Animate-SQL 4s;
+  -moz-animation: Animate-SQL 4s;
+  -o-animation: Animate-SQL 4s;
+  width: 10%;
+  height: 50px;
+  position: absolute;
+  background-color: #beb30d;
+}
+
+@keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-webkit-keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-moz-keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+@-o-keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+
+.Skill-Area {
+  z-index: 1;
+  float: left;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 18px;
+}
+
+.PercentText {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 15px;
+  float: right;
+  text-shadow: none;
+  color: rgb(255, 255, 255);
+  font-family: Lato-Regular, sans-serif;
+  font-size: 18px;
+}
+
+/* #endregion Compétences */
+
+/* wipe animation div */
+.wipe-transition {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color-primary);
+  position: absolute;
+  left: -100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: var(--text-color-light);
+}
+
+/*Miniature wiki teo */
+
+.img-border {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+  
+}
+
+.paragraph text-left {
+  margin-left: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects > div {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width:800px) {
+  .projects > div {
+    flex-basis: 30%;
+  }
+}
+
+
+.projets-individuel-wiki-e_commerce {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.projets-we {
+  background-color:  rgba(255, 255, 255, 0.6) ;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+h3 {
+  border-radius: 20px;
+  padding: 0.3rem 1rem;
+}
+
+.projets-individuel-groupe {
+  background-color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 25px;
+  margin: 7px 5px;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  color: rgba(0,0,0,.55);
+  border-style: groove;
+  border-radius: 10px;
+  font-family: system-ui;
+  border-color: rgb(168, 168, 168);
+  text-decoration: none;
+  padding: 2px;
+}
+
+:hover.projets-individuel-groupe {
+  color: #474646;
+}
+
+.externe-lien {
+border: 1px;
+border-radius: 0px;
+
+}
+
+h4 {margin: 3px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.intro {
+  font-style: normal;
+  font-size: 25px;
+  margin: 3px;
+}
+
+.objectifs {
+  font-style: normal;
+  font-size: 25px;
+  color: #474646;
+}
+
+.projets-we {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.competences {
+  font-style: normal;
+  font-size: 25px;
+  color: #474646;
+}
+
+.langages {
+  font-style: normal;
+  font-size: 25px;
+  color: #474646;
+}
