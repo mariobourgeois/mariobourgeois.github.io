@@ -548,6 +548,10 @@ h3 {
   color: #474646;
 }
 
+:active.projets-individuel-groupe {
+  color: #000000;
+}
+
 .externe-lien {
 border: 1px;
 border-radius: 0px;
