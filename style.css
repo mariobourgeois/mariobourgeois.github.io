@@ -552,6 +552,13 @@ h3 {
   color: #000000;
 }
 
+a:-webkit-any-link:active {
+  color: -webkit-activelink;
+}
+
+
+
+
 .externe-lien {
 border: 1px;
 border-radius: 0px;
