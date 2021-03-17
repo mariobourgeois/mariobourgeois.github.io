@@ -548,12 +548,9 @@ h3 {
   color: #474646;
 }
 
-:active.projets-individuel-groupe {
-  color: #000000;
-}
 
 a:-webkit-any-link:active {
-  color: -webkit-activelink;
+  color: black;
 }
 
 
